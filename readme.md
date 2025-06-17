@@ -93,8 +93,33 @@ This assignment helped me synthesize everything from Lab 2 and turn it into a po
 
 ---
 
-## Screenshots  
-(Include high-resolution screenshots here with captions such as "Figure 1: Home page layout" or "Figure 2: XKCD comic display")
+## Screenshots
+
+Below are high-resolution screenshots of my deployed website, each labeled with my name and captured directly from the live GitHub Pages deployment.
+
+**Figure 1: Home Page Layout**  
+The landing page includes my name, headshot, education, experience, skills, and resume download.  
+![Figure 1](images/1.png)
+
+**Figure 2: Joke Fetched from Public API**  
+A live programming joke is displayed from JokeAPI and refreshed every 60 seconds.  
+![Figure 2](images/2.png)
+
+**Figure 3: XKCD Comic Display via Graphic API**  
+Comic image, title, and alt text fetched from XKCD’s public API using JavaScript.  
+![Figure 3](images/3.png)
+
+**Figure 4: Cookie-Based Welcome Message**  
+Returning visitors are greeted with their last visit time using JavaScript cookies.  
+![Figure 4](images/4.png)
+
+**Figure 5: Email Show/Hide Feature**  
+Clicking the button toggles the visibility of my email using DOM manipulation.  
+![Figure 5](images/5.png)
+
+**Figure 6: Digital and Analog Clocks**  
+Dynamic clocks rendered using JavaScript and canvas with live time updates.  
+![Figure 6](images/6.png)
 
 
 
