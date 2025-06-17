@@ -96,13 +96,5 @@ This assignment helped me synthesize everything from Lab 2 and turn it into a po
 ## Screenshots  
 (Include high-resolution screenshots here with captions such as "Figure 1: Home page layout" or "Figure 2: XKCD comic display")
 
----
 
-## File Structure  
-├── index.html # Main profile site
-├── waph.html # Course & Labs showcase
-├── script.js # JavaScript logic
-├── assets/
-│ ├── phani.jpeg # Headshot
-│ └── resume.pdf # Résumé PDF
 
