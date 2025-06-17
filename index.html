@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZCLQPB08KP"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -24,7 +23,7 @@
 <body>
   <header class="bg-light py-5">
     <div class="container text-center">
-      <img src="assets/phani.jpeg" alt="Phani Bharadwaj Jarugumilli" class="rounded-circle mb-3" width="150" height="150">
+      <img src="assets/phani.jpeg" alt="Phani Bharadwaj Jarugumilli" alt="Phani Bharadwaj Jarugumilli" class="rounded-circle mb-3" width="150" height="150">
       <h1 class="display-5">Phani Bharadwaj Jarugumilli</h1>
       <p>
         <a href="mailto:jarugupj@mail.uc.edu">jarugupj@mail.uc.edu</a> |
@@ -34,6 +33,11 @@
   </header>
 
 <main class="container my-5">
+
+  <!-- Welcome Message -->
+  <div id="welcome-message" class="alert alert-info text-center"></div>
+  <!-- Greeting Message -->
+  <div id="greeting-message" class="alert alert-success text-center"></div>
 
   <!-- About Section -->
   <section id="about" class="bg-white pt-3 pb-5 border-bottom shadow-sm">
@@ -116,6 +120,39 @@
     </ul>
   </section>
 
+    <!-- Clock Section -->
+  <section class="mb-5 text-center">
+    <div id="digit-clock" class="mb-3 fw-bold"></div>
+    <canvas id="analog-clock" width="150" height="150" style="background-color:#999;"></canvas>
+  </section>
+
+  <!-- Email Toggle -->
+  <section class="mb-5 text-center">
+    <button onclick="showhideEmail()" class="btn btn-outline-dark mb-2">Show/Hide Email</button>
+    <div id="email"></div>
+  </section>
+
+  <!-- Joke Section -->
+  <section class="mb-5 text-center">
+    <h3 class="fw-bold">Joke of the Minute</h3>
+    <div id="joke-box" class="p-3 bg-warning-subtle border rounded"></div>
+    <p class="text-muted small mt-2">
+      Disclaimer: This joke is provided by a public API (jokeapi.dev). I do not control its content.
+    </p>
+  </section>
+
+
+  <!-- XKCD Comic Section -->
+  <section class="mb-5 text-center">
+    <h3 class="fw-bold">Today's XKCD Comic</h3>
+    <img id="xkcd-img" src="" alt="XKCD Comic" class="img-fluid rounded border" style="max-height: 400px;">
+    <p id="xkcd-title" class="mt-2 fst-italic text-muted"></p>
+    <p class="text-muted small mt-2">
+      Disclaimer: This comic is fetched from XKCD's public API. I do not own or moderate the content.
+    </p>
+  </section>
+
+
   <!-- Resume -->
   <section id="resume" class="mb-5">
     <h2>Resume</h2>
@@ -130,17 +167,18 @@
   <section id="waph-course" class="mb-5 text-center">
     <a href="waph.html" class="btn btn-outline-secondary btn-lg btn">Explore My WAPH Projects & Labs</a>
   </section>
+
 </main>
 
-
   <footer class="bg-light py-3 text-center">
-    <!-- Add Flag Counter or Analytics script here -->
     <small>&copy; 2025 Phani Bharadwaj Jarugumilli</small>
   </footer>
 
-  <!-- Optional: load Bootstrap JS -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <script src="https://waph-phung.github.io/clock.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-  <!-- Your custom script -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
